@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/static/css/main.46569135.css",
+    "main.js": "/static/js/main.b5d92429.js",
+    "static/media/mountain.png": "/static/media/mountain.013e28bc3000438a543e.png",
+    "static/media/foggy-forest.jpg": "/static/media/foggy-forest.14c83e47515035aeb7a7.jpg",
+    "static/media/waterfall.jpg": "/static/media/waterfall.dbc31ef85f12416eb867.jpg",
+    "static/media/audi.jpg": "/static/media/audi.d456d4fd20b8004121a2.jpg",
+    "static/media/code.png": "/static/media/code.acdaa6603d6b4327d296.png",
+    "index.html": "/index.html",
+    "main.46569135.css.map": "/static/css/main.46569135.css.map",
+    "main.b5d92429.js.map": "/static/js/main.b5d92429.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.46569135.css",
+    "static/js/main.b5d92429.js"
+  ]
+}
