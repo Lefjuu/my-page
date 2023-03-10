@@ -7,6 +7,10 @@ import Contact from '../components/Contact'
 const Main = () => {
     const [currentPage, setCurrentPage] = useState(1)
     const [openIndex, setOpenIndex] = useState(true)
+
+    const handleIndex = () => {
+        setOpenIndex(!openIndex)
+    }
     return (
         <>
             <div className="container">
@@ -99,7 +103,7 @@ const Main = () => {
                 <div className="right">
                     <div className="right-background">
                         <div className="right-content">
-                            {currentPage === 1 && <Profile />}
+                            {currentPage === 1 && <Profile handleIndex={handleIndex} />}
                             {currentPage === 2 && <Projects />}
                             {currentPage === 3 && <Contact />}
                         </div>
@@ -112,8 +116,6 @@ const Main = () => {
                         <div
                             className="index-crimson"
                             onClick={() => {
-                                console.log('xd')
-                                console.log(openIndex)
                                 setOpenIndex(!openIndex)
                             }}>
                             <span className="index-category" aria-hidden="true">
