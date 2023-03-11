@@ -5,6 +5,8 @@ const Profile = ({ handleIndex }) => {
         <>
             <div className="element">
                 <span className="element-title" aria-hidden="true" onClick={() => handleIndex()}>
+                    <span className="element-icon">&nbsp;</span>
+
                     <p className="element-bar">About&nbsp;me</p>
                 </span>
 

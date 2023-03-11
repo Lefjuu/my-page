@@ -115,12 +115,11 @@ const Main = () => {
                         <div
                             className="index-crimson"
                             onClick={() => {
-                                console.log('xd')
                                 console.log(openIndex)
                                 setOpenIndex(!openIndex)
                             }}>
                             <span className="index-category" aria-hidden="true">
-                                <p className="index-name">index</p>
+                                <p className="index-name">menu</p>
                             </span>
                             <div className="sidebar">
                                 <div className="sidebar-content">

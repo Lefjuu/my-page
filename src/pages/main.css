@@ -332,6 +332,12 @@ footer {
     margin-top: 10rem;
 }
 
+@media (max-width: 640px) {
+    .footer-container {
+        margin-top: 2rem;
+    }
+}
+
 .footer-container > div {
     display: flex;
     flex-direction: column;
@@ -391,10 +397,13 @@ footer {
 
 .element-title {
     display: flex;
+    flex-direction: column;
     position: relative;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     cursor: pointer;
+    background-color: #313131;
+    padding: 2rem 0 10rem 0;
 }
 
 @media (min-width: 640px) {
@@ -411,10 +420,48 @@ footer {
     text-transform: uppercase;
 }
 
+.element-icon {
+    text-align-last: left;
+    font-size: 0.75rem;
+    line-height: 1rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+.element-icon {
+    position: relative;
+    margin-top: 3.5rem;
+}
+
+.element-icon,
+.element-icon::before,
+.element-icon::after {
+    width: 2rem;
+    height: 2px;
+    background-color: #ffffffd0;
+    display: inline-block;
+}
+
+.element-icon::before,
+.element-icon::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    transition: all 0.2s;
+}
+
+.element-icon::before {
+    top: -0.8rem;
+}
+.element-icon::after {
+    top: 0.8rem;
+}
+
 .element > section {
     /* display: grid; */
     padding-top: 2.5rem;
-    padding-right: 2.5rem;
+    padding-right: 2rem;
+    margin-left: 1rem;
 }
 
 @media (min-width: 640px) {
@@ -428,6 +475,12 @@ footer {
     padding: 3rem;
     margin-top: 1rem;
     text-align: left;
+}
+
+@media (max-width: 640px) {
+    .element-main-text {
+        padding: 1rem;
+    }
 }
 
 .element-main-text > p {
@@ -470,6 +523,12 @@ footer {
     padding: 3rem;
 }
 
+@media (max-width: 640px) {
+    .element-content {
+        padding: 0.5rem;
+    }
+}
+
 .element-content > p {
     font-size: 1rem;
     /* letter-spacing: 0.3px; */
@@ -495,7 +554,7 @@ footer {
     .element-content-img {
         width: 100%;
         padding: 0;
-        margin: 2rem 0;
+        margin: 1rem 0;
     }
 }
 
