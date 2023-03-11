@@ -112,7 +112,6 @@ const Main = () => {
 
                 <div className="index">
                     <div className={`${openIndex === true ? 'index-closed' : 'index-opened'} `}>
-                        {/* <div className="index-padding"></div> */}
                         <div
                             className="index-crimson"
                             onClick={() => {
