@@ -2,7 +2,7 @@ const Contact = ({ handleIndex }) => {
     return (
         <>
             <div className="element">
-                <span className="element-title" aria-hidden="true" onClick={() => handleIndex}>
+                <span className="element-title" aria-hidden="true" onClick={() => handleIndex()}>
                     <p className="element-bar">contact</p>
                 </span>
 

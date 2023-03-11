@@ -8,8 +8,8 @@ const Main = () => {
     const [currentPage, setCurrentPage] = useState(1)
     const [openIndex, setOpenIndex] = useState(true)
 
-    const handleIndex = () => {
-        setOpenIndex(!openIndex)
+    const handleIndex = async () => {
+        await setOpenIndex(!openIndex)
     }
     return (
         <>
@@ -104,18 +104,20 @@ const Main = () => {
                     <div className="right-background">
                         <div className="right-content">
                             {currentPage === 1 && <Profile handleIndex={handleIndex} />}
-                            {currentPage === 2 && <Projects />}
-                            {currentPage === 3 && <Contact />}
+                            {currentPage === 2 && <Projects handleIndex={handleIndex} />}
+                            {currentPage === 3 && <Contact handleIndex={handleIndex} />}
                         </div>
                     </div>
                 </div>
 
                 <div className="index">
                     <div className={`${openIndex === true ? 'index-closed' : 'index-opened'} `}>
-                        <div className="index-padding"></div>
+                        {/* <div className="index-padding"></div> */}
                         <div
                             className="index-crimson"
                             onClick={() => {
+                                console.log('xd')
+                                console.log(openIndex)
                                 setOpenIndex(!openIndex)
                             }}>
                             <span className="index-category" aria-hidden="true">

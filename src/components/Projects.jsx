@@ -1,10 +1,10 @@
 import Audi from '../images/audi.jpg'
 
-const Projects = () => {
+const Projects = ({ handleIndex }) => {
     return (
         <>
             <div className="element">
-                <span className="element-title" aria-hidden="true">
+                <span className="element-title" aria-hidden="true" onClick={() => handleIndex()}>
                     <p className="element-bar">projects</p>
                 </span>
 

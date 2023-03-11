@@ -1,10 +1,10 @@
 import Code from '../images/code.png'
 
-const Profile = () => {
+const Profile = ({ handleIndex }) => {
     return (
         <>
             <div className="element">
-                <span className="element-title" aria-hidden="true">
+                <span className="element-title" aria-hidden="true" onClick={() => handleIndex()}>
                     <p className="element-bar">About&nbsp;me</p>
                 </span>
 
